@@ -124,7 +124,10 @@ print(paste(&quot;The mean total number of steps taken per day is &quot;, mean_s
 <pre><code>## [1] &quot;The mean total number of steps taken per day is  10766.1886792453 .&quot;</code></pre>
 <pre class="r"><code>print(paste(&quot;The median total number of steps taken per day is &quot;, median_steps, &quot;.&quot;))</code></pre>
 <pre><code>## [1] &quot;The median total number of steps taken per day is  10765 .&quot;</code></pre>
-<p>As seen from the above results, the mean is 10766 while the median is 10765.</p>
+<div id="mean-and-median-number-of-steps-taken-each-day" class="section level3">
+<h3>Mean and median number of steps taken each day</h3>
+<p>As seen from the above results, the mean is <strong>10766</strong> while the median is <strong>10765</strong>.</p>
+</div>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
@@ -148,10 +151,15 @@ for(i in 1:length(intervals)){
 print(paste(&quot;The 5-minute interval with the maximum number of average steps is &quot;,
             max_interval, &quot;to&quot;, max_interval+5, &quot;.&quot;))</code></pre>
 <pre><code>## [1] &quot;The 5-minute interval with the maximum number of average steps is  835 to 840 .&quot;</code></pre>
-<p>From the above results, the 5-minute interval with the maximum number of average steps is 835 to 840, which is approximately the time that people prepare to leave for work. Note once again that the code returns “835”, which is interpreted as the start of the interval.</p>
+<div id="interval-with-maximum-number-of-steps" class="section level3">
+<h3>Interval with maximum number of steps</h3>
+<p>From the above results, the 5-minute interval with the maximum number of average steps is <strong>835</strong> to 840, which is approximately the time that people prepare to leave for work. Note once again that the code returns “<strong>835</strong>”, which is interpreted as the start of the interval.</p>
+</div>
 </div>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
+<div id="strategy-for-imputing-missing-values" class="section level3">
+<h3>Strategy for imputing missing values</h3>
 <p>The missing values are populated using the mean for that 5-minute interval, calculated over all days. As shown in the code below, there were 2304 missing values.</p>
 <pre class="r"><code>#Part 2: imputing missing values
 
@@ -201,8 +209,12 @@ print(paste(&quot;The mean total number of steps taken per day is &quot;, mean_s
 <pre class="r"><code>print(paste(&quot;The median total number of steps taken per day is &quot;, median_steps_na, 
       &quot;, using the dataset with imputed missing values.&quot;))</code></pre>
 <pre><code>## [1] &quot;The median total number of steps taken per day is  10571 , using the dataset with imputed missing values.&quot;</code></pre>
-<p>The above results show that the new mean and median total number of steps taken per day are 9122 and 10571 respectively. These estimates are in contrast to the estimates of 10766 and 10765 reported when the NA values are simply excluded. Thus, accounting for the NA values causes the average total steps per day to decrease.</p>
+</div>
+<div id="new-mean-and-median-total-number-of-steps-taken-per-day" class="section level3">
+<h3>New mean and median total number of steps taken per day</h3>
+<p>The above results show that the new mean and median total number of steps taken per day are <strong>9122</strong> and <strong>10571</strong> respectively. These estimates are in contrast to the estimates of <strong>10766</strong> and <strong>10765</strong> reported when the NA values are simply excluded. Thus, accounting for the NA values causes the average total steps per day to decrease.</p>
 <p>This can also be seen by comparing the histograms, since the it is clear that the histogram with the NA values accounted for results in an increase in frequency in the smaller histogram intervals and a decrease in the larger histogram intervals.</p>
+</div>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>

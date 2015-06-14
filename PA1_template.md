@@ -104,7 +104,8 @@ print(paste("The median total number of steps taken per day is ", median_steps, 
 ## [1] "The median total number of steps taken per day is  10765 ."
 ```
 
-As seen from the above results, the mean is 10766 while the median is 10765.
+### Mean and median number of steps taken each day
+As seen from the above results, the mean is **10766** while the median is **10765**.
 
 ## What is the average daily activity pattern?
 
@@ -148,12 +149,14 @@ print(paste("The 5-minute interval with the maximum number of average steps is "
 ## [1] "The 5-minute interval with the maximum number of average steps is  835 to 840 ."
 ```
 
+### Interval with maximum number of steps
+
 From the above results, the 5-minute interval with the maximum number of average steps is 
-835 to 840, which is approximately the time that people prepare to leave for work. Note once
-again that the code returns "835", which is interpreted as the start of the interval.
+**835** to 840, which is approximately the time that people prepare to leave for work. Note once again that the code returns "**835**", which is interpreted as the start of the interval.
 
 ## Imputing missing values
 
+### Strategy for imputing missing values
 The missing values are populated using the mean for that 5-minute interval, calculated over
 all days. As shown in the code below, there were 2304 missing values.
 
@@ -238,10 +241,10 @@ print(paste("The median total number of steps taken per day is ", median_steps_n
 ## [1] "The median total number of steps taken per day is  10571 , using the dataset with imputed missing values."
 ```
 
+### New mean and median total number of steps taken per day
+
 The above results show that the new mean and median total number of steps taken per day
-are 9122 and 10571 respectively. These estimates are in contrast to the estimates of 10766
-and 10765 reported when the NA values are simply excluded. Thus, accounting for the NA
-values causes the average total steps per day to decrease.
+are **9122** and **10571** respectively. These estimates are in contrast to the estimates of **10766** and **10765** reported when the NA values are simply excluded. Thus, accounting for the NA values causes the average total steps per day to decrease.
 
 This can also be seen by comparing the histograms, since the it is clear that the histogram
 with the NA values accounted for results in an increase in frequency in the smaller histogram intervals and a decrease in the larger histogram intervals.
